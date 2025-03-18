@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Chat Container */
+.chat-container {
+    max-width: 500px;
+    margin: auto;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat Box */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background: #282a36;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Messages */
+.message {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    max-width: 75%;
+}
+
+.user-message {
+    background-color: #4caf50;
+    align-self: flex-end;
+    text-align: right;
+    color: white;
+}
+
+.ai-message {
+    background-color: #0078d4;
+    align-self: flex-start;
+    text-align: left;
+    color: white;
+}
+
+/* Input Field */
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Send Button */
+.send-button {
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #d32f2f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Logout Popup */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-popup {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm-btn {
+    background: #d32f2f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HOme page */
+/* Full-screen hero section */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    /* ✅ Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* ✅ Add padding to prevent overlap */
+}
+
+/* Swiper container */
+.swiper-container {
+    width: 80%;
+    max-width: 800px;
+    height: 300px;
+    /* ✅ Set a fixed height for the carousel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text animation */
+.hero-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Login button */
+.login-button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background: #4f46e5;
+    transform: scale(1.1);
+}
+
+/* Microphone button */
+.mic-button {
+    position: absolute;
+    bottom: 10%;
+    width: 100px;
+    height: 100px;
+    background: #ec4899;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(236, 72, 153, 0.5);
+}
+
+.mic-button:hover {
+    transform: scale(1.1);
+}
+
+/* Home page end */
+/* Jarvis login page */
+
+
+body {
+    background: radial-gradient(circle, rgba(10, 10, 20, 0.9) 30%, rgba(5, 5, 15, 1) 100%);
+    font-family: "Orbitron", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.jarvis-container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 20px cyan;
+    text-align: center;
+    position: relative;
+}
+
+.jarvis-title {
+    color: cyan;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px cyan;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    color: cyan;
+    text-shadow: 0 0 5px cyan;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: rgba(0, 255, 255, 0.1);
+    color: cyan;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px cyan;
+}
+
+.jarvis-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    background: linear-gradient(90deg, cyan, blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.jarvis-btn:hover {
+    box-shadow: 0 0 20px cyan;
+    transform: scale(1.05);
+}
+
+.signup-container {
+    margin-top: 10px;
+}
+
+.signup-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: cyan;
+    background: none;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 15px cyan;
+}
+
+/* login page end */
+/* Register page css */
+.input-group {
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    color: cyan;
+    text-shadow: 0 0 5px cyan;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: rgba(0, 255, 255, 0.1);
+    color: cyan;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Overlay to cover full screen with blur effect */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent dark overlay */
+    backdrop-filter: blur(10px);
+    /* Blur the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Success message box */
+.success-message {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px cyan;
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+    width: 300px;
+}
+
+/* Button style inside popup */
+.success-message .jarvis-btn {
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #ff4d4d;
+    /* Red color to indicate error */
+    background: #ffe6e6;
+    /* Light red background */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    border: 1px solid #ff4d4d;
+}
